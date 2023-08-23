@@ -1,3 +1,4 @@
 return {
-  { "Pocco81/true-zen.nvim", opts = {} }
+  { "Pocco81/true-zen.nvim", opts = {} },
+  { 'godlygeek/tabular' },
 }
