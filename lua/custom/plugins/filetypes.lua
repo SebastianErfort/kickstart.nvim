@@ -1,4 +1,10 @@
 return {
+  { 'rodjek/vim-puppet' },
+  {
+    'ixru/nvim-markdown',
+    enabled = false
+    -- let g:vim_markdown_frontmatter = 1
+  },
   {
     'lervag/vimtex'
     -- vim.let g:tex_flavor='latex'
