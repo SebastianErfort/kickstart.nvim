@@ -1,16 +1,15 @@
 return {
   -- colorscheme
-  -- { 'sainnhe/sonokai' },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    'catppuccin/nvim',
+    name = 'catppuccin',
     priority = 1000,
     opts = {
-      flavour = "macchiato",
+      flavour = 'macchiato',
       background = { -- :h background
-        light = "latte",
-        dark = "mocha",
+        light = 'latte',
+        dark = 'mocha',
       },
     },
-  }
+  },
 }

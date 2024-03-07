@@ -2,11 +2,11 @@ return {
   { 'rodjek/vim-puppet' },
   {
     'ixru/nvim-markdown',
-    enabled = false
+    enabled = true,
     -- let g:vim_markdown_frontmatter = 1
   },
   {
-    'lervag/vimtex'
+    'lervag/vimtex',
     -- vim.let g:tex_flavor='latex'
     -- vim.let g:vimtex_view_method='zathura'
     -- vim.let g:vimtex_quickfix_mode=0
