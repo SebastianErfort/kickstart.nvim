@@ -151,9 +151,6 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Load remaining VIM-compatible settings
-vim.cmd 'source ~/.vimrc'
-
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -296,31 +293,6 @@ require('lazy').setup({
   -- you do for a plugin at the top level, you can do for a dependency.
   --
   -- Use the `dependencies` key to specify the dependencies of a particular plugin
-
-  {
-    -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim',
-    -- Enable `lukas-reineke/indent-blankline.nvim`
-    -- See `:help ibl`
-    main = 'ibl',
-    opts = {},
-  },
-
-  -- "gc" to comment visual regions/lines
-  {
-    'numToStr/Comment.nvim',
-    opts = {
-      ignore = '^$',
-      toggler = {
-        line = '<leader>cc',
-        block = '<leader>bc',
-      },
-      opleader = {
-        line = '<leader>c',
-        block = '<leader>b',
-      },
-    },
-  },
 
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
@@ -827,6 +799,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
+  { import = 'custom' },
   { import = 'custom.plugins' },
 }, {
   ui = {
