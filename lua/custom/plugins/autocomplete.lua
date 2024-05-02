@@ -4,8 +4,8 @@ return {
   { 'hrsh7th/cmp-cmdline' },
   {
     'windwp/nvim-autopairs',
-    event = "InsertEnter",
-    opts = {} -- this is equalent to setup({}) function
+    event = 'InsertEnter',
+    opts = {}, -- this is equalent to setup({}) function
   },
   -- {
   --   'honza/vim-snippets' ,
@@ -14,6 +14,4 @@ return {
   --   -- let g:UltiSnipsJumpBackwardTrigger='<c-g>'
   --   -- let g:UltiSnipsSnippetDirectories=['UltiSnips', '$HOME/.config/nvim/snippets/UltiSnips/']
   -- },
-  -- lua snippet completion source for nvim-cmp
-  -- { 'saadparwaiz1/cmp_luasnip' },
 }
